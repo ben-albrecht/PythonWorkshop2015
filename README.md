@@ -3,7 +3,7 @@
 
 ![SaM](https://github.com/ben-albrecht/PythonWorkshop2015/blob/master/images/sam.jpg)
 
-This is the repository for the Simulations and Modeling (SaM) Python Workshop, Spring 2015.
+This is the repository for the Spring 2015 Python Workshop, hosted by the Center for Simulations and Modeling (SaM).
 
 Topics include:
 * Python Boot Camp
