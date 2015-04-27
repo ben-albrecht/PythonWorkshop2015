@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Example of a python module that can be executed from commandline or imported by another python module.
 """
@@ -9,7 +10,7 @@ def main():
 
 def somefunction():
     # Do something else important
-    print("Other important thing done")
+    print("somefunction is completed")
     
         
 if __name__ == '__main__':
