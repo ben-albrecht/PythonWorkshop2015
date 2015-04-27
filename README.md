@@ -7,7 +7,7 @@ This is the repository for the Spring 2015 Python Workshop, hosted by the Center
 
 Topics include:
 * Python Boot Camp
-* Data Processing with NumPy and SciPy
+* Scientific Libraries in Python
 * High Performance Computing with Python
 
 View Slides and Notebooks via [NBViewer](http://nbviewer.ipython.org/github/ben-albrecht/PythonWorkshop2015/tree/master/)
