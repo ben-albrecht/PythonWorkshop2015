@@ -251,7 +251,8 @@ div.output_prompt {
 <h2 id="Objectives">Objectives<a class="anchor-link" href="#Objectives">&#182;</a></h2><ul>
 <li>Exposure to fundamentals of Python language<ul>
 <li>What is Python?</li>
-<li>How to use Python?</li>
+<li>Basic principles of Python programming</li>
+<li>Apply Python outside of this workshop</li>
 </ul>
 </li>
 </ul>
@@ -277,8 +278,17 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Python is a dynamic, interpreted language.</p>
-<p>There are no type declarations of variables, parameters, functions, or methods in source code.</p>
+<p>Python is a quick and light general purpose programming language</p>
+<ul>
+<li>dynamic casting<ul>
+<li>There are no type declarations of variables, functions, or methods in source code.</li>
+</ul>
+</li>
+<li>interpreted implementation<ul>
+<li>Bytecode compiled at runtime</li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
@@ -319,12 +329,12 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Python is a quick and light general purpose programming language</p>
 <p>It is great for:</p>
 <ul>
+<li>Quick scripts</li>
 <li>Small-medium projects</li>
-<li>Prototyping</li>
-<li>Scientific software</li>
+<li>Prototyping large projects</li>
+<li>Scientific software (libraries &amp; community)</li>
 </ul>
 
 </div>
@@ -386,55 +396,28 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are many ways to use Python:</p>
+<h1 id="Jupyter">Jupyter<a class="anchor-link" href="#Jupyter">&#182;</a></h1><p>Our <em>"IDE"</em> for the workshop</p>
+<p>Python application itself is an interactive REPL (Read-Eval-Print Loop)</p>
+<p>IPython is an extension to this native interactive Python shell</p>
+<p>IPython Notebook is the JSON formatted version of IPython that runs in browser</p>
+<p>Jupyter is an extension of IPython Notebook that includes many other features and languages</p>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Help-Tools">Help Tools<a class="anchor-link" href="#Help-Tools">&#182;</a></h2><p><strong>Built-in</strong></p>
 <ul>
-<li>Interactive (Python interpreter &amp; IPython interpreter)</li>
-<li>Scripts</li>
-<li>Modules</li>
-<li>Packages</li>
-<li>Applications</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Jupyter">Jupyter<a class="anchor-link" href="#Jupyter">&#182;</a></h1><p>Our <em>"IDE"</em> of choice for the workshop</p>
-<p>Contains IPython Notebook interactive python shell, but supports many other languages / features</p>
-<p>Runs inside the browser</p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Basic-Printing">Basic Printing<a class="anchor-link" href="#Basic-Printing">&#182;</a></h2>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Getting-Help">Getting Help<a class="anchor-link" href="#Getting-Help">&#182;</a></h2><ul>
 <li><p><code>help(object)</code></p>
 <ul>
-<li>Companion function like a manual</li>
+<li>Companion function similar to man pages</li>
 </ul>
 </li>
 <li><p><code>dir(object)</code></p>
@@ -443,7 +426,7 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 </ul>
 </li>
 </ul>
-<p><strong>IPython Exclusive:</strong></p>
+<p><strong>IPython</strong></p>
 <ul>
 <li><code>object?</code> <ul>
 <li>Prints all known information about object</li>
@@ -459,11 +442,6 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 </li>
 </ul>
 <p><strong>The internet</strong></p>
-<ul>
-<li>www.python.org</li>
-<li>www.stackoverflow.com</li>
-<li>www.google.com</li>
-</ul>
 
 </div>
 </div>
@@ -476,10 +454,145 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Basic-Printing">Basic Printing<a class="anchor-link" href="#Basic-Printing">&#182;</a></h1>
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Python-2-Printing">Python 2 Printing<a class="anchor-link" href="#Python-2-Printing">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment" data-fragment-index="13">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span> <span class="s">&#39;Hello World&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div><div class="fragment" data-fragment-index="14">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">python_creator</span> <span class="o">=</span> <span class="s">&#39;Guido van Rossum&#39;</span>
+<span class="n">python_age</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="nb">print</span> <span class="s">&#39;Python was created by&#39;</span><span class="p">,</span> <span class="n">python_creator</span>
+
+<span class="nb">print</span> <span class="s">&#39;Python was created {0:d} years ago&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">python_age</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div><div class="fragment" data-fragment-index="15">
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Python-3-Printing">Python 3 Printing<a class="anchor-link" href="#Python-3-Printing">&#182;</a></h3>
+</div>
+</div>
+</div>
+    </div><div class="fragment" data-fragment-index="15">
+        
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[222]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># This will import Python 3 style printing in Python 2</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>  
+
+<span class="nb">print</span><span class="p">(</span><span class="s">&#39;Hello World&#39;</span><span class="p">)</span> <span class="c"># Notice parenthesis</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello World
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+        </div><div class="fragment" data-fragment-index="17">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[225]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">python_creator</span> <span class="o">=</span> <span class="s">&#39;Guido van Rossum&#39;</span>
+<span class="n">python_age</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s">&#39;Python was created by&#39;</span><span class="p">,</span> <span class="n">python_creator</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s">&#39;Python was created {0} years ago&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">python_age</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Python was created by Guido van Rossum
+Python was created 24 years ago
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Numerical-Objects">Numerical Objects<a class="anchor-link" href="#Numerical-Objects">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="14">
+</div><div class="fragment" data-fragment-index="19">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -498,7 +611,7 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="15">
+    </div><div class="fragment" data-fragment-index="20">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -531,7 +644,7 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="16">
+    </div><div class="fragment" data-fragment-index="21">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -585,7 +698,7 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="18">
+</div><div class="fragment" data-fragment-index="23">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -618,14 +731,14 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Functions-Part-1">Functions Part 1<a class="anchor-link" href="#Functions-Part-1">&#182;</a></h1>
+<h1 id="Basic-Functions">Basic Functions<a class="anchor-link" href="#Basic-Functions">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="20">
+</div><div class="fragment" data-fragment-index="25">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[162]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="c"># Function definition:</span>
@@ -644,7 +757,7 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[162]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -657,22 +770,22 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="21">
+    </div><div class="fragment" data-fragment-index="26">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[189]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="c"># Function with arguments:</span>
-<span class="k">def</span> <span class="nf">plustwo</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="n">newx</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">2</span>
-    <span class="k">return</span> <span class="n">newx</span>
+<span class="k">def</span> <span class="nf">add2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">xplus2</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">2</span>
+    <span class="k">return</span> <span class="n">xplus2</span>
 
 <span class="c"># Calling Function:</span>
 <span class="n">number</span> <span class="o">=</span> <span class="mi">8</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">plustwo</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&#39;number =&#39;</span><span class="p">,</span> <span class="n">number</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&#39;add2(number) =&#39;</span><span class="p">,</span> <span class="n">add2</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -685,8 +798,8 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>8
-10
+<pre>number = 8
+add2(number) = 10
 </pre>
 </div>
 </div>
@@ -707,7 +820,7 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 <h1 id="Containers">Containers<a class="anchor-link" href="#Containers">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="23">
+</div><div class="fragment" data-fragment-index="28">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -742,37 +855,62 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 <h2 id="Strings">Strings<a class="anchor-link" href="#Strings">&#182;</a></h2>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="25">
+</div><div class="fragment" data-fragment-index="30">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[233]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="c"># Several ways to define:</span>
-<span class="n">a</span> <span class="o">=</span> <span class="s">&#39;spam&#39;</span>
-<span class="n">b</span> <span class="o">=</span> <span class="s">&quot;eggs&quot;</span> 
-<span class="n">c</span> <span class="o">=</span> <span class="s">&quot;&quot;&quot; triple quotes</span>
+<span class="n">str1</span> <span class="o">=</span> <span class="s">&#39;spam&#39;</span>
+<span class="n">str2</span> <span class="o">=</span> <span class="s">&quot;eggs&quot;</span> 
+<span class="n">str3</span> <span class="o">=</span> <span class="s">&quot;&quot;&quot; triple quotes</span>
 <span class="s">        preserve white space   </span>
 <span class="s">        newlines &quot;&quot;&quot;</span>
+
+<span class="c"># Empty string</span>
+<span class="n">str0</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+
+<span class="c"># Special characters escaped with &#39;\&#39;</span>
+<span class="n">str4</span> <span class="o">=</span> <span class="s">&#39;</span><span class="se">\&#39;</span><span class="s">single quotes insides single quotes</span><span class="se">\&#39;</span><span class="s">&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">str4</span><span class="p">)</span>
+
+<span class="n">str5</span> <span class="o">=</span> <span class="s">&quot;&#39;single quotes inside double quotes&#39;&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">str5</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&apos;single quotes insides single quotes&apos;
+&apos;single quotes inside double quotes&apos;
+</pre>
 </div>
-    </div><div class="fragment" data-fragment-index="26">
+</div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment" data-fragment-index="31">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[157]:</div>
+<div class="prompt input_prompt">In&nbsp;[184]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="c"># Casting:</span>
-<span class="n">somenumber</span> <span class="o">=</span> <span class="s">&#39;132&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">somenumber</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">somenumber</span><span class="p">))</span>
+<span class="n">str132</span> <span class="o">=</span> <span class="s">&#39;132&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">str132</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">str132</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -795,15 +933,17 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="27">
+    </div></section><section>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[185]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># String concatenation:</span>
-<span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># String Operations (These work with lists and tuples as well)</span>
+
+<span class="c"># Concatenation:</span>
+<span class="n">str1</span> <span class="o">+</span> <span class="n">str2</span>
 </pre></div>
 
 </div>
@@ -814,7 +954,7 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[31]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[185]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -826,31 +966,15 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 </div>
 </div>
 
-</div>
-    </div></section><section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tuples">Tuples<a class="anchor-link" href="#Tuples">&#182;</a></h2><ul>
-<li>Tuples contain references to objects</li>
-<li>Their structure cannot be changed (cannot add or remove elements)</li>
-<li>Uses parenthesis syntax ()</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
+</div><div class="fragment" data-fragment-index="33">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[112]:</div>
+<div class="prompt input_prompt">In&nbsp;[186]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">mytuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">&#39;red&#39;</span><span class="p">)</span>
-<span class="n">mytuple</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Length</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -861,11 +985,74 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[112]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[186]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&apos;red&apos;</pre>
+<pre>4</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment" data-fragment-index="34">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[177]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># Repetition</span>
+<span class="n">scream</span> <span class="o">=</span> <span class="s">&#39;aA&#39;</span><span class="o">*</span><span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">scream</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>aAaAaAaAaAaAaAaAaAaA
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[178]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># Membership</span>
+<span class="s">&#39;a&#39;</span> <span class="ow">in</span> <span class="n">scream</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[178]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
 </div>
 
 </div>
@@ -875,18 +1062,107 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 
 </div></section><section>
     
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Tuples">Tuples<a class="anchor-link" href="#Tuples">&#182;</a></h2><ul>
+<li>Tuples contain references to objects</li>
+<li>Cannot add or remove elements (immutable)</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+    
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[165]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Argument unpacking:</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Creating tuples:</span>
+<span class="n">tup1</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;physics&#39;</span><span class="p">,</span> <span class="s">&#39;chemistry&#39;</span><span class="p">,</span> <span class="mi">1997</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>
+<span class="n">tup2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span> <span class="p">)</span>
+<span class="n">tup3</span> <span class="o">=</span> <span class="s">&quot;a&quot;</span><span class="p">,</span> <span class="s">&quot;b&quot;</span><span class="p">,</span> <span class="s">&quot;c&quot;</span><span class="p">,</span> <span class="s">&quot;d&quot;</span>
+
+<span class="c"># Empty tuple</span>
+<span class="n">tup0</span> <span class="o">=</span> <span class="p">()</span>
+
+<span class="c"># Single element tuple still needs comma:</span>
+<span class="n">tup4</span> <span class="o">=</span> <span class="p">(</span><span class="mi">50</span><span class="p">,)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section><section>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[179]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># Access elements</span>
+<span class="n">tup1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c"># 1st element</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[179]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>4</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment" data-fragment-index="39">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[181]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># Common operations include length, concatenation, repetition, membership</span>
+<span class="c"># Length, </span>
+<span class="nb">len</span><span class="p">(</span><span class="n">tup1</span><span class="p">)</span> <span class="c"># length</span>
+<span class="n">tup5</span> <span class="o">=</span> <span class="n">tup1</span> <span class="o">+</span> <span class="n">tup2</span>
+<span class="c"># etc.</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div></section><section>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[219]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># Cool feature: Argument Unpacking</span>
+<span class="n">mytuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;red&#39;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">somefunction</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
     <span class="c"># Do something</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&#39;args:&#39;</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&#39;args unpacked:&#39;</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span>
     <span class="k">return</span>
 
 <span class="c"># *mytuple unpacks the tuple and passes each element as an argument</span>
+<span class="c"># somefunction(*mytuple) -&gt; translate to: somefunction(1, 2, &#39;red&#39;)</span>
 <span class="n">somefunction</span><span class="p">(</span><span class="o">*</span><span class="n">mytuple</span><span class="p">)</span>
 </pre></div>
 
@@ -900,7 +1176,7 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>args: 1 3 red
+<pre>args unpacked: 1 2 red
 </pre>
 </div>
 </div>
@@ -917,22 +1193,22 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Lists">Lists<a class="anchor-link" href="#Lists">&#182;</a></h1><ul>
 <li>Lists are resizable (pop/remove, append/extend)</li>
-<li>Lists use brackets syntax []</li>
+<li>Typically homogeneous data</li>
 </ul>
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="32">
+</div><div class="fragment" data-fragment-index="42">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[153]:</div>
+<div class="prompt input_prompt">In&nbsp;[220]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mylist</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="c"># indices &lt; 0 are counted from the end backwards, </span>
-<span class="c"># starting with -1 as last value</span>
+
+<span class="c"># [-1] refers to last element, [-2] second to last, ...</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mylist</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 
@@ -993,7 +1269,7 @@ Namespaces are one honking great idea -- let&apos;s do more of those!
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="34">
+</div><div class="fragment" data-fragment-index="44">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1063,7 +1339,7 @@ number popped: 30
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="36">
+</div><div class="fragment" data-fragment-index="46">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1097,17 +1373,17 @@ number popped: 30
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="37">
+    </div><div class="fragment" data-fragment-index="47">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Every odd element index:</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Every other element</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mylist</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>
 
-<span class="c"># Every even element index:</span>
+<span class="c"># Every other element starting at 2nd element</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mylist</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
 
@@ -1155,14 +1431,12 @@ number popped: 30
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Dictionaries">Dictionaries<a class="anchor-link" href="#Dictionaries">&#182;</a></h1><ul>
-<li>Key-value pairs</li>
-<li>Any type can be a key or value</li>
-<li>Uses {} or dict() syntax</li>
+<li>Key-value pairs of any type</li>
 </ul>
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="40">
+</div><div class="fragment" data-fragment-index="50">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1199,7 +1473,7 @@ number popped: 30
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="41">
+    </div><div class="fragment" data-fragment-index="51">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1249,7 +1523,7 @@ number popped: 30
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="43">
+</div><div class="fragment" data-fragment-index="53">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1316,7 +1590,7 @@ number popped: 30
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[235]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="c"># while loop</span>
@@ -1325,6 +1599,8 @@ number popped: 30
 <span class="k">while</span> <span class="n">c</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
     <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="mi">1</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+    
+<span class="c"># break / continue work as well</span>
 </pre></div>
 
 </div>
@@ -1353,12 +1629,14 @@ number popped: 30
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[234]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="c"># for loop</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c"># break / continue work as well</span>
 </pre></div>
 
 </div>
@@ -1447,41 +1725,35 @@ mysum = 25
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Functions-Part-2">Functions Part 2<a class="anchor-link" href="#Functions-Part-2">&#182;</a></h1>
-</div>
-</div>
-</div></section><section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Function-Scope">Function Scope<a class="anchor-link" href="#Function-Scope">&#182;</a></h2><p>Python functions follow LEGB scope resolution rules:</p>
+<h2 id="Function-Arguments">Function Arguments<a class="anchor-link" href="#Function-Arguments">&#182;</a></h2><p>Two types of arguments:</p>
 <ul>
-<li>L - Local (names assigned within function)</li>
-<li>E - Enclosing function locals (names assigned within any enclosing function)</li>
-<li>G - Global (Names assigned at the top level of a module file)</li>
-<li>B - Built-in (Pre-assigned names in Python)</li>
+<li><p>positional arguments: <code>*args</code></p>
+</li>
+<li><p>keyword arguments: <code>**kwargs</code></p>
+<ul>
+<li><p>Optional arguments with default values</p>
+</li>
+<li><p>Must always come after positional arguments</p>
+</li>
+</ul>
+</li>
 </ul>
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="51">
+</div><div class="fragment" data-fragment-index="60">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[105]:</div>
+<div class="prompt input_prompt">In&nbsp;[227]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">somefunc</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">increment</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">increment</span><span class="p">)</span>
+    <span class="k">return</span>
 
-<span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="c"># y is defined outside function scope, but we still have access</span>
-    <span class="n">x</span> <span class="o">+=</span> <span class="n">y</span>
-    <span class="k">return</span> <span class="n">x</span>
-
-<span class="n">foo</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">somefunc</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">increment</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">somefunc</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1492,7 +1764,104 @@ mysum = 25
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[105]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0 5 10
+0 5 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[230]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># When unsure of how many arguments will be passed to a function</span>
+
+<span class="k">def</span> <span class="nf">toomanyargs</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&#39;args is a list of positional arguments&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&#39;kwargs is a dictionary of key word arguments&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span>
+
+<span class="n">toomanyargs</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color1</span><span class="o">=</span><span class="s">&#39;red&#39;</span><span class="p">,</span> <span class="n">color2</span><span class="o">=</span><span class="s">&#39;green&#39;</span><span class="p">,</span> <span class="n">color3</span><span class="o">=</span><span class="s">&#39;blue&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>args is a list of positional arguments
+(5, 3, 1) 
+
+kwargs is a dictionary of key word arguments
+{&apos;color2&apos;: &apos;green&apos;, &apos;color3&apos;: &apos;blue&apos;, &apos;color1&apos;: &apos;red&apos;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Function-Scope">Function Scope<a class="anchor-link" href="#Function-Scope">&#182;</a></h1><p>Python functions follow LEGB scope resolution rules:</p>
+<ul>
+<li>L - Local</li>
+<li>E - Enclosing function locals</li>
+<li>G - Global</li>
+<li>B - Built-in</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment" data-fragment-index="63">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[211]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="c"># y is defined outside function scope, but we still have access</span>
+<span class="k">def</span> <span class="nf">add_y</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">+=</span> <span class="n">y</span>
+    <span class="k">return</span> <span class="n">x</span>
+
+<span class="n">add_y</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[211]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -1509,20 +1878,20 @@ mysum = 25
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
+<div class="prompt input_prompt">In&nbsp;[209]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="c"># Cannot modify unpassed variables outside scope unless using `global`</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="k">def</span> <span class="nf">localy</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">local_y</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
     <span class="n">x</span> <span class="o">+=</span> <span class="n">y</span>
     <span class="k">return</span> <span class="n">x</span>
 
 <span class="c"># y is still 2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">localy</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&#39;local_y&#39;</span><span class="p">,</span> <span class="n">local_y</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">y</span><span class="p">)</span>
     
-<span class="k">def</span> <span class="nf">globaly</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">global_y</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="c"># Give globaly function access to variable y</span>
     <span class="k">global</span> <span class="n">y</span>
     <span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
@@ -1530,9 +1899,7 @@ mysum = 25
     <span class="k">return</span> <span class="n">x</span>
 
 <span class="c"># y is now modified, </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">globaly</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">y</span><span class="p">)</span>
-    
-    
+<span class="nb">print</span><span class="p">(</span><span class="s">&#39;global_y(10)&#39;</span><span class="p">,</span> <span class="n">global_y</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1545,8 +1912,8 @@ mysum = 25
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>20 2
-20 10
+<pre>local_y 20 2
+global_y(10) 20 10
 </pre>
 </div>
 </div>
@@ -1554,22 +1921,6 @@ mysum = 25
 </div>
 </div>
 
-</div></section><section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Pass-by-object-reference">Pass-by-object-reference<a class="anchor-link" href="#Pass-by-object-reference">&#182;</a></h2><ul>
-<li>All function arguments are "passed-by-object-reference"<ul>
-<li>Variables do not have values, objects do</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
 </div></section>
     </section><section>
     <section>
@@ -1579,7 +1930,7 @@ mysum = 25
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Mutability">Mutability<a class="anchor-link" href="#Mutability">&#182;</a></h1><p>Mutable objects get created and destroyed upon assignment and collection</p>
+<h1 id="Mutability">Mutability<a class="anchor-link" href="#Mutability">&#182;</a></h1><p>Immutable objects get created and destroyed upon assignment and collection</p>
 <ul>
 <li>Strings</li>
 <li>Numbers</li>
@@ -1595,19 +1946,98 @@ mysum = 25
 </div>
 </div></section><section>
     
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Implications-of-Mutability">Implications of Mutability<a class="anchor-link" href="#Implications-of-Mutability">&#182;</a></h3><ul>
+<li>Function arguments are "passed-by-object-reference"<ul>
+<li>Variables do not have values, objects do</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment" data-fragment-index="67">
+    
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[108]:</div>
+<div class="prompt input_prompt">In&nbsp;[237]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Example demonstrating mutability</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># lists are mutable</span>
+
+<span class="c"># If passed to a function that modifies list, </span>
+<span class="c">#     it will be modified outside of function</span>
+
+<span class="k">def</span> <span class="nf">append</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
+  <span class="n">mylist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">append</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&#39;After append:&#39;</span><span class="p">,</span> <span class="n">mylist</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-</div></section>
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>After append: [0, 1]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div><div class="fragment" data-fragment-index="68">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[238]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># If passed to a function that reassigns list, </span>
+<span class="c">#    it will not be modified outside of function</span>
+
+<span class="k">def</span> <span class="nf">reassign</span><span class="p">(</span><span class="n">mylist</span><span class="p">):</span>
+  <span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+
+<span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">reassign</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s">&#39;After reassignment:&#39;</span><span class="p">,</span> <span class="n">mylist</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>After reassignment: [0]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div></section>
     </section><section>
     <section>
     
@@ -1624,7 +2054,7 @@ mysum = 25
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="57">
+</div><div class="fragment" data-fragment-index="70">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1661,47 +2091,50 @@ mysum = 25
 </ul>
 </li>
 <li><strong>Instances</strong> have<ul>
-<li>data stored in attributes</li>
+<li>Data stored in attributes</li>
 <li>Methods to operate on the data</li>
 </ul>
 </li>
-<li>Object can interact with each other by passing attributes to methods</li>
+<li>Objects can interact with each other by passing attributes to methods</li>
 </ul>
 
 </div>
 </div>
 </div></section><section>
     
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[206]:</div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>class Point(object):
-    """
-    Simple class for representing a point in a Cartesian coordinate system.
-    """</p>
-
-<pre><code>def __init__(self, x, y):
-    """
-    Create a new Point at x, y.
-    """
-    self.x = x
-    self.y = y
-
-def translate(self, dx, dy):
-    """
-    Translate the point by dx and dy in the x and y direction.
-    """
-    self.x += dx
-    self.y += dy
-
-def __str__(self):
-    return("Point at [%f, %f]" % (self.x, self.y))</code></pre>
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="k">class</span> <span class="nc">Point</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Simple class for representing a point in a Cartesian coordinate system.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a new Point at x, y.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
+        
+    <span class="k">def</span> <span class="nf">translate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Translate the point by dx and dy in the x and y direction.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+=</span> <span class="n">dx</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">+=</span> <span class="n">dy</span>
+        
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span><span class="p">(</span><span class="s">&quot;Point at [%f, %f]&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">))</span>
+</pre></div>
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="60">
+</div>
+
+</div><div class="fragment" data-fragment-index="73">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1785,10 +2218,11 @@ Point at [1.000000, 1.500000]
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[134]:</div>
+<div class="prompt input_prompt">In&nbsp;[221]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">file</span> mymodule.py
+#!/usr/bin/env python
 &quot;&quot;&quot;
 Example of a python module that can be executed from commandline or imported by another python module.
 &quot;&quot;&quot;
@@ -1800,7 +2234,7 @@ def main():
 
 def somefunction():
     # Do something else important
-    print(&quot;Other important thing done&quot;)
+    print(&quot;somefunction is completed&quot;)
     
         
 if __name__ == &#39;__main__&#39;:
@@ -1855,7 +2289,7 @@ if __name__ == &#39;__main__&#39;:
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="65">
+</div><div class="fragment" data-fragment-index="78">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1886,7 +2320,7 @@ if __name__ == &#39;__main__&#39;:
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="66">
+    </div><div class="fragment" data-fragment-index="79">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1955,6 +2389,10 @@ if __name__ == &#39;__main__&#39;:
 </li>
 <li>SaM Python Workshop 2014 Slides:<ul>
 <li><a href="https://github.com/AlbertDeFusco/python">https://github.com/AlbertDeFusco/python</a></li>
+</ul>
+</li>
+<li>Python Exercises<ul>
+<li><a href="http://www.ling.gu.se/~lager/python_exercises.html">http://www.ling.gu.se/~lager/python_exercises.html</a></li>
 </ul>
 </li>
 </ul>
